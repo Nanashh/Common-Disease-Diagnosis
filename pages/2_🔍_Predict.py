@@ -54,7 +54,7 @@ def main():
     
     if 'data' not in st.session_state:
         if st.button('Explore Data First!', type='primary'):
-            st.switch_page("pages/1_📊_Data Exploration.py")
+            st.switch_page("pages/1_📊_Data_Exploration.py")
     else:
         st.header('Choose your model :black_nib:', divider='grey')
         st.info(f'''Default model: **Random Forest Classifier**.''', icon='ℹ')
