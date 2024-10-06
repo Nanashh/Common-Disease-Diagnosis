@@ -17,5 +17,12 @@ import pickle
 import seaborn as sns
 import os
 
+try:
+    from nltk.corpus import stopwords
+    english_stopwords = stopwords.words('english')
+except LookupError:
+    nltk.download('stopwords')
+    english_stopwords = stopwords.words('english')
+
 def page_config(title):
     st.set_page_config(page_title=title,layout="wide")
